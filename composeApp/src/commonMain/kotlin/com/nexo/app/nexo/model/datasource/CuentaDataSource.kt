@@ -6,5 +6,4 @@ interface CuentaDataSource{
     suspend fun obtenerCuentasPorusuario(idUsuario: Int): List<CuentaDTO>
     suspend fun crearCuenta(cuenta: CuentaDTO): Boolean
     suspend fun actualizarSaldo(idCuenta: Int, nuevoSaldo: Double): Boolean
-    suspend fun obtenerCuentasPorUsuario(idUsuario: Int): List<CuentaDTO>
 }
